@@ -1,0 +1,48 @@
+canvas {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+}
+
+div:not(#opsrc) {
+	color: white;
+	text-align: center;
+	color: cyan;
+	width: 20%;
+	margin: auto;
+}
+
+button, label {
+	height: 20vh;
+	width: 30vw;
+	font-size: 8vh;
+	border-top-right-radius: 3vh;
+	border-top-left-radius: 3vh;
+	border-bottom-right-radius: 1vh;
+	border-bottom-left-radius: 1vh;
+}
+
+input {
+	display: none;
+}
+
+#opsrc {
+	width: 100vw;
+	height: 100vh;
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	transition: height 500ms ease-out;
+	overflow: hidden;
+	background: black;
+	color: white;
+}
+
+.selected {
+	color: cyan;
+}
